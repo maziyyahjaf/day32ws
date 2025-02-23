@@ -1,0 +1,12 @@
+<form [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+    Description:<input type="text" name="description" formControlName="description">
+    <div>
+        Priority: 
+                <input type="radio" name="priority" value="low" formControlName="priority">Low
+                <input type="radio" name="priority" value="medium" formControlName="priority">Medium
+                <input type="radio" name="priority" value="high" formControlName="priority">High
+
+    </div>
+    Due: <input type="date" name="due" formControlName="due">
+    <button type="submit">Add</button>
+</form>
